@@ -1,0 +1,7 @@
+devices.page:
+  path: "/devices-table"
+  defaults:
+    _controller: '\Drupal\devices\Controller\DevicesPageController::content'
+    _title: 'Devices table'
+  requirements:
+    _permission: "view devices"

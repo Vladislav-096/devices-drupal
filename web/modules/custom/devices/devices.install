@@ -1,0 +1,51 @@
+<?php
+function devices_schema()
+{
+  $schema['devices'] = [
+    'description' => 'Devices table',
+    'fields' => [
+      'id' => [
+        'description' => 'The primaty identifier for the device.',
+        'type' => 'serial',
+        'size' => 'small',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'Name of a device.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'created' => [
+        'description' => 'Timestamp for when the device was created.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Добавляет колонки 'uid' в таблицу devices.
+ * /update.php вот так сделать надо
+ */
+// function devices_update_8001()
+// {
+//   $schema = \Drupal::database()->schema();
+
+//   // Добавление колонки author.
+//   if (!$schema->fieldExists('devices', 'uid')) {
+//     $schema->addField('devices', 'uid', [
+//       'description' => 'The {user}.uid that added this device',
+//       'type' => 'int',
+//       'not null' => TRUE,
+//       'default' => 0,
+//     ]);
+//   }
+// }

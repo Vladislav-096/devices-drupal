@@ -1,0 +1,11 @@
+view devices:
+  title: "Devices page"
+  description: "View devices page"
+access devices report:
+  title: "Access List of devices"
+  description: "View the report listining of all devices submitted."
+administer devices:
+  title: "Administer devices Settings"
+  description: "Access the devices administrative settings page."
+  # means that the permission is intendent for admins only
+  restrict access: true
