@@ -1,7 +1,15 @@
-devices.page:
-  path: "/devices-table"
+devices.page: # ← страница с React
+  path: "/devices-table" # адрес, который открывает пользователь
   defaults:
     _controller: '\Drupal\devices\Controller\DevicesPageController::content'
-    _title: 'Devices table'
+    _title: "Devices table"
+  requirements:
+    _permission: "view devices"
+
+devices.api:
+  path: "/api/devices"
+  defaults:
+    _controller: '\Drupal\devices\Controller\DevicesApiController::list'
+    # _title: 'Devices table'
   requirements:
     _permission: "view devices"

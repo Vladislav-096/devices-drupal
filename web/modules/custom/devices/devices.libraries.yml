@@ -1,0 +1,12 @@
+# devices-react:
+#   version: 1.x
+#   js:
+#     js/devices.react.js: { minified: true } # файл, собранный vite build
+#   dependencies:
+#     - core/drupalSettings
+devices-react:
+  version: 1.0
+  js:
+    js/bundle.js: {}
+  dependencies:
+    - core/drupal
