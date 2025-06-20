@@ -1,0 +1,9 @@
+global-css:
+  css:
+    theme:
+      css/global.css: {}
+pacifico:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Pacifico&display=swap: { type: external }
+      css/styles.css: {}

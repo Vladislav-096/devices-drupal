@@ -8,5 +8,8 @@ devices-react:
   version: 1.0
   js:
     js/bundle.js: {}
+  css:
+    theme:
+      js/assets/main-Zvd552Oe.css: {}
   dependencies:
     - core/drupal

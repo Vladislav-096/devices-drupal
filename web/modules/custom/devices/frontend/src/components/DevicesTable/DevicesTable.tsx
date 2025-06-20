@@ -3,6 +3,7 @@ import { Device, getDevices } from "../../api/devices";
 import { queryClient } from "../../api/queryClient";
 import { useQuery } from "@tanstack/react-query";
 import { CustomError } from "../../api/validationResponse";
+import styles from "./devicesTable.module.scss";
 
 const limit = 4;
 export const DevicesTable = () => {
@@ -81,7 +82,11 @@ export const DevicesTable = () => {
       </table>
 
       <div>
-        <button onClick={handlePrevious} disabled={offset === 0}>
+        <button
+          // className={styles["pagination-btn"]}
+          onClick={handlePrevious}
+          disabled={offset === 0}
+        >
           Previous
         </button>
         <span>
@@ -89,6 +94,7 @@ export const DevicesTable = () => {
           {Math.ceil(getDevicesQuery.data.total / limit)}
         </span>
         <button
+          className={styles["pagination-btn"]}
           onClick={handleNext}
           disabled={offset + limit >= getDevicesQuery.data.total}
         >

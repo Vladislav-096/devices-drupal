@@ -1,0 +1,26 @@
+name: My Bootstrap Subtheme
+type: theme
+base theme: bootstrap
+description: "Subtheme based on Bootstrap 5"
+core_version_requirement: ^11
+package: Custom
+version: 1.0
+regions:
+  header: "Header"
+  top_header: "Top Header"
+  primary_menu: "Primary menu"
+  secondary_menu: "Secondary menu"
+  breadcrumb: "Breadcrumb"
+  highlighted: "Highlighted"
+  content: "Content"
+  sidebar_first: "Sidebar first"
+  sidebar_second: "Sidebar second"
+  footer_first: "Footer First"
+  footer_second: "Footer Second"
+  footer_third: "Footer Third"
+  footer_fourth: "Footer Fourth"
+  footer: "Footer"
+libraries:
+  - my_bootstrap_theme/global-css
+features:
+  - logo

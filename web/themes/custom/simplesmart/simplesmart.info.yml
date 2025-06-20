@@ -1,0 +1,16 @@
+name: Simple Smart Stark Version
+type: theme
+description: "A practical theme"
+core_version_requirement: ^10 || ^11
+base theme: stark
+screenshot: simplesmartscreenshot.webp
+regions:
+  header: Header
+  simplesmartmenu: Navigation
+  content: Content
+  footer: Footer
+  page_top: Page top
+  page_bottom: Page bottom
+libraries:
+  - simplesmart/global-css
+  - simplesmart/pacifico
